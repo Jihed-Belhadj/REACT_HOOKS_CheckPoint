@@ -180,10 +180,12 @@ function App() {
       <ModalF Tab={Tab} setTab={setTab} ></ModalF>
       </div>
       
-      <div className='search'>
-      <NavB MovieSch={MovieSch} setMovieSch={setMovieSch}></NavB><StarRating Rating={Rating} setRating={setRating}></StarRating> 
-      <MoviesList Tab={Tab} setTab={setTab} MovieSch={MovieSch} Rating={Rating}> </MoviesList>
+      <div style={{display:"flex", justifyContent:"space-around",width: "100%", height: '5%'}}>
+      <NavB MovieSch={MovieSch} setMovieSch={setMovieSch}></NavB>
+      <StarRating Rating={Rating} setRating={setRating}></StarRating> 
+      
       </div>
+      <MoviesList Tab={Tab} setTab={setTab} MovieSch={MovieSch} Rating={Rating}> </MoviesList>
     </div>
   );
 }
